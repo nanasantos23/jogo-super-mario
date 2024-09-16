@@ -14,6 +14,11 @@
     background: linear-gradient(#87ceeb,#e0f6ff );
 }
 
+.pipe, .mario, .nuvem {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
 .pipe {
  position: absolute;
  bottom: 0;
@@ -35,46 +40,46 @@
   position: absolute;
   width: 550px;
   animation: clouds-animation 20s infinite linear;
-} 
+}
 
 button {
-    background: grenn;
+    background: green;
     color: white;
     font-weight: bold;
     font-size: 1.5rem;
     border: none;
     padding: 1rem;
     position: absolute;
-    right: 50vh;
+    right: 50vw;
     top: 50vh;
     cursor: pointer;
     z-index: 1;
+    
 }
-
 button:hover {
     border: 2px solid green;
     background: none;
-    color:green;
+    color: green;
 }
 
-button.start {
-display: block;
+button:start {
+    display: block;
 }
-
 .game-over {
-    width: 100%
+    
+    width: 100%;
     height: 100vh;
     background: red;
     display: none;
     align-items: center;
     justify-content: center;
-    flex-direction: center;
+    flex-direction: column;
     position: fixed;
-    top: 0;
+    top: 0; 
     left: 0;
 }
 
-.game-over h1{
+game-over h1 { 
     font-size: 3rem;
     color: red;
     text-align: center;
@@ -121,4 +126,5 @@ display: block;
     to {
         right: 100%;
     }
+}
 
